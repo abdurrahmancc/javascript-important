@@ -5,6 +5,8 @@ function secondLarges(number) {
     if (element > firstLarge) {
       secondLarge = firstLarge;
       firstLarge = element;
+    } else if (element > secondLarge) {
+      secondLarge = element;
     }
   }
   return secondLarge;
